@@ -104,16 +104,14 @@ All modifications are preceded by an automated backup routine:
 
 ---
 
-## Repository Components
+## Deployment & Configuration Mappings
 
-| File | Target Location | Description |
+| Component / Subsystem | Target Location | Operational Role |
 | :--- | :--- | :--- |
-| [`install.sh`](install.sh) | Current Folder | Turn-key installer executing backup, font installation, and shell configuration |
-| [`cleanup.sh`](cleanup.sh) | Current Folder | Backup finalization and single-command rollback manager |
-| [`.p10k.zsh`](.p10k.zsh) | `~/.p10k.zsh` | Segmented pill Powerlevel10k prompt with blurred heads and transient prompt mode |
-| [`PinkParadise.terminal`](PinkParadise.terminal) | Terminal.app Preferences | Dark mode plum and neon pink Terminal.app profile |
-| [`PastelSakura.terminal`](PastelSakura.terminal) | Terminal.app Preferences | Light mode strawberry milk Terminal.app profile |
-| [`PinkParadise.itermcolors`](PinkParadise.itermcolors) | iTerm2 Color Presets | Equivalent color scheme preset for iTerm2 |
+| **Automation Suite** | `install.sh`, `cleanup.sh` | Turn-key deployment, backup preservation, and single-command rollback manager |
+| **Prompt Engine** | `~/.p10k.zsh` | Segmented pill Powerlevel10k prompt with blurred heads and transient prompt mode |
+| **Terminal Profiles** | Terminal.app Preferences | Dark mode plum (`PinkParadise.terminal`) and light mode strawberry milk (`PastelSakura.terminal`) |
+| **iTerm2 Preset** | iTerm2 Color Presets | Equivalent cross-emulator color scheme preset (`PinkParadise.itermcolors`) |
 
 ---
 
